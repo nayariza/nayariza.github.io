@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*メディアクエリの指定（※widthが640px以下の場合に{}内のCSSを適用）*/
+@media screen and (max-width: 640px) {
+
+/*=====================
+ヘッダーエリアの設定
+=======================*/
+#containerTop{
+	width:100%;
+	height:180px;
+}
+
+#containerTop .inner{
+	width:100%;
+	height:180px;
+	position:relative;
+}
+
+#containerTop .inner h1{
+	float:none;
+	text-align:center;
+}
+
+#containerTop .inner ul#navArea{
+	width:100%;
+	margin-top:24px;
+}
+
+#containerTop .inner #navArea li{
+	width:33.3333333%;
+	margin:0;
+}
+
+#containerTop .inner #navArea li a{
+	text-align:center;
+}
+
+#containerTop .inner li#homeIcon{
+	background-position:center center;
+	margin-bottom:10px;
+}
+
+#containerTop .inner li#newsIcon{
+	background-position:center center;
+	margin-bottom:10px;
+}
+
+#containerTop .inner li#menuIcon{
+	background-position:center center;
+	margin-bottom:10px;
+}
+
+#containerTop .inner li#accessIcon{
+	background-position:center center;
+	margin-top:10px;
+}
+
+#containerTop .inner li#blogIcon{
+	background-position:center center;
+	margin-top:10px;
+}
+
+#containerTop .inner li#voiceIcon{
+	background-position:center center;
+	margin-top:10px;
+}
+
+#containerTop .inner #iconArea{
+	float:none;
+	width:auto;
+	margin-top:0;
+}
+
+#containerTop .inner #iconArea #contactArea{
+	width:48px;
+	margin-top:0;
+	position:absolute;
+	top:15px;
+	left:4.6875%;
+}
+
+#containerTop .inner li#lineIcon{
+	margin-left:10px;
+}
+
+#containerTop .inner #iconArea #snsArea{
+	width:48px;
+	margin-top:0;
+	position:absolute;
+	top:15px;
+	right:4.6875%;
+}
+
+#containerTop .inner li#instagramIcon{
+	margin-left:10px;
+}
+
+/*=====================
+ページトップの設定
+=======================*/
+
+#pageTop{
+	width:100%;
+}
+
+}
