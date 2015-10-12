@@ -180,7 +180,7 @@ background:url(../images/img_mem_002_o.jpg) no-repeat center;
 /* ----- スクロールしたら「トップへ戻るボタン」を表示（あとで設定） -----  */
 #page-top {
 position:fixed;
-bottom:20px;
+bottom:55px;
 right:20px;
 font-size:77%;
 }
