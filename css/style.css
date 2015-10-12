@@ -25,8 +25,22 @@ text-align:center;
 margin-top:250px;
 }
 
-
-
+/*-----slider-----
+.slider .slide {
+  width: 275px;
+  height: 58px;
+  float: left;
+}
+.slider .slideSet {
+position:absolute;
+}
+.slider {
+  width: 275px;
+  height: 58px;
+  overflow: hidden;
+  position:relative;
+}
+*/
 
 /*-----section02-----*/
 div#wrap div.section02{

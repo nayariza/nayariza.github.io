@@ -19,7 +19,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 
 
-<script src="js/jquery.bxslider.min.js"></script>
+<!--
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+-->
 
 <!--JavaScript-->
 <!--スクロールをゆっくり動かすjs-->
@@ -70,21 +72,15 @@ $(function(){
 	);
 });
 </script>
-
-<script>
-$(function() {
-  $('.bxslider').bxSlider({
-    auto:true,
-    speed:1000,
-    mode:'fade',
-    slideMargin:200,
-    easing:'ease-out',
-    captions:true,
-    responsive:true,
-    pager:false,
-    slideWidth:275
-  });
-});
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                mode: 'fade',
+                slideWidth: 275,
+                pager: false
+            });
+        });
 </script>
 
 
@@ -96,8 +92,12 @@ $(function() {
 <link href="css/style.css" rel="stylesheet">
 <link href="css/response_001.css" rel="stylesheet">
 
-<link href="css/jquery.bxslider.css" rel="stylesheet">
+<!--<link href="css/flexslider.css" rel="stylesheet">-->
 
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
 
 </head>
 
@@ -112,11 +112,10 @@ $(function() {
 </ul>
 
 <ul class="bxslider">
-<li><h1><img src="images/img_txt_001.gif" width="275" height="58" alt="TRUNK☆LAB"/></h1></li>
-<li><h1><img src="images/img_txt_002.gif" width="275" height="58" alt="TRUNK☆LAB"/></h1></li>
-<li><h1><img src="images/img_txt_003.gif" width="275" height="58" alt="TRUNK☆LAB"/></h1></li>
+<li><img src="images/img_txt_001.gif" width="275" height="58" alt="TRUNK☆LAB"/></li>
+<li><img src="images/img_txt_002.gif" width="275" height="58" alt="TRUNK☆LAB"/></li>
+<li><img src="images/img_txt_003.gif" width="275" height="58" alt="TRUNK☆LAB"/></li>
 </ul>
-
 
 </div><!--//section01-->
 
