@@ -82,7 +82,9 @@ $(function(){
             });
         });
 </script>
-
+<script>
+new WOW().init();
+</script>
 
 <!--css-->
 <link href="css/base.css" rel="stylesheet">
@@ -91,6 +93,7 @@ $(function(){
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/response_001.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
 
 <!--<link href="css/flexslider.css" rel="stylesheet">-->
 
@@ -99,19 +102,20 @@ $(function(){
 <!-- bxSlider CSS file -->
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
+<script src="js/wow.js"></script>
 </head>
 
 <body>
 <div id="wrap">
 <div class="section01">
 <ul class="clearfix">
-<li><a href="#index.html"><img src="images/nav_01.gif" width="66" height="16" alt="HOME"/></a></li>
-<li><a href="#section02"><img src="images/nav_02.gif" width="69" height="16" alt="WORK"/></a></li>
-<li><a href="#section03"><img src="images/nav_03.gif" width="59" height="16" alt="NEWS"/></a></li>
-<li><a href="#section04"><img src="images/nav_04.gif" width="92" height="16" alt="MEMBER"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#index.html"><img src="images/nav_01.gif" width="66" height="16" alt="HOME"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section02"><img src="images/nav_02.gif" width="69" height="16" alt="WORK"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section03"><img src="images/nav_03.gif" width="59" height="16" alt="NEWS"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section04"><img src="images/nav_04.gif" width="92" height="16" alt="MEMBER"/></a></li>
 </ul>
 
-<ul class="bxslider">
+<ul class="bxslider wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
 <li><img src="images/img_txt_001.gif" width="275" height="58" alt="TRUNK☆LAB"/></li>
 <li><img src="images/img_txt_002.gif" width="275" height="58" alt="TRUNK☆LAB"/></li>
 <li><img src="images/img_txt_003.gif" width="275" height="58" alt="TRUNK☆LAB"/></li>
@@ -124,19 +128,19 @@ $(function(){
 <div class="section02Inner clearfix">
 <div class="sideArea">
 <ul>
-<li slass="sns001"><a href="https://instagram.com/trunk_lab/" class="popup"><img src="images/img_sns_01.gif" width="58" height="58" alt="Facebook"/></a></li>
-<li><a href="#"><img src="images/img_sns_02.gif" width="70" height="49" alt="Twitter"/></a></li>
-<li><a href="https://instagram.com/trunk_lab/" target="_blank"><img src="images/img_sns_03.gif" width="60" height="60" alt="Instagram"/></a></li>
+<li class="art_img wow fadeInUp animated" data-wow-delay="2s" data-wow-offset="10" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="https://instagram.com/trunk_lab/"><img src="images/img_sns_01.gif" width="58" height="58" alt="Facebook"/></a></li>
+<li class="art_img wow fadeInUp animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_sns_02.gif" width="70" height="49" alt="Twitter"/></a></li>
+<li class="art_img wow fadeInUp animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="https://instagram.com/trunk_lab/" target="_blank"><img src="images/img_sns_03.gif" width="60" height="60" alt="Instagram"/></a></li>
 </ul>
 </div><!--//sideArea-->
 <div class="workArea">
 <ul class="clearfix">
-<li class="work001"><a href="#"><img src="images/img_work_001.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work002"><a href="#"><img src="images/img_work_002.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work003"><a href="#"><img src="images/img_work_003.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work004"><a href="#"><img src="images/img_work_004.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work005"><a href="#"><img src="images/img_work_005.jpg" width="300" height="300" alt=""/></a></li>
-<li class="more"><a href="#"><img src="images/img_work_more.gif" width="300" height="300" alt="MORE..."/></a></li>
+<li class="work001 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_001.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work002 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_002.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work003 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_003.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work004 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_004.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work005 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_005.jpg" width="300" height="300" alt=""/></a></li>
+<li class="more art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_more.gif" width="300" height="300" alt="MORE..."/></a></li>
 </ul>
 </div><!--//workArea-->
 </div><!--//section02Inner-->
@@ -146,17 +150,17 @@ $(function(){
 <h2><img src="images/h2_txt_02.gif" width="102" height="30" alt="NEWS"/></h2>
 
 <ul>
-<li><a href="#"><img src="images/img_news_001.jpg" width="600" height="160" alt=""/></a></li>
-<li><a href="#"><img src="images/img_news_002.jpg" width="600" height="160" alt=""/></a></li>
-<li class="last"><a href="#"><img src="images/img_news_003.jpg" width="600" height="160" alt=""/></a></li>
+<li class="art_img wow slideInRight animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInRight;"><a href="#"><img src="images/img_news_001.jpg" width="600" height="160" alt=""/></a></li>
+<li class="art_img wow slideInLeft animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInLeft;"><a href="#"><img src="images/img_news_002.jpg" width="600" height="160" alt=""/></a></li>
+<li class="last art_img wow fadeInUp animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInUp;"><a href="#"><img src="images/img_news_003.jpg" width="600" height="160" alt=""/></a></li>
 </ul>
 </div><!--//section03-->
 
 <div class="section04" id="section04">
 <h2><img src="images/h2_txt_03.gif" width="138" height="27" alt="MEMBER"/></h2>
 <ul class="clearfix">
-<li class="mem001"><a href="#"><img src="images/img_mem_001.jpg" width="309" height="368" alt="NAYARIZA"/></a></li>
-<li class="last mem002"><a href="#"><img src="images/img_mem_002.jpg" width="309" height="368" alt="TAKA YOSHIDA"/></a></li>
+<li class="mem001 art_img wow slideInLeft animated" data-wow-delay="2s" data-wow-offset="3000" style="visibility: visible; animation-delay: 7s; animation-name: fadeInLeft;"><a href="#"><img src="images/img_mem_001.jpg" width="309" height="368" alt="NAYARIZA"/></a></li>
+<li class="last mem002 art_img wow slideInRight animated" data-wow-delay="2s" data-wow-offset="3000" style="visibility: visible; animation-delay: 7s; animation-name: fadeInRight;"><a href="#"><img src="images/img_mem_002.jpg" width="309" height="368" alt="TAKA YOSHIDA"/></a></li>
 </ul>
 </div><!--//section04-->
 
