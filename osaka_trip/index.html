@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>大阪アップ！！（旅のしおり）</title>
+<meta name="description" content="'大阪アップ！！（旅のしおり）">
+<meta name="keywords" content="大阪アップ！！（旅のしおり）">
+<meta name="author" content="trunklab">
+<meta name="copyright" content="&copy; trunklab" />
+<meta name="rating" content="general" />
+<meta name="coverage" content="japan" />
+<meta name="reply-to" content="trunk_lab@gmail.com" />
+
+<!-- jQuery  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>-->
+<!-- プラグイン本体 -->
+<script type="text/javascript" src="js/jquery.simplePopup.pack.js"></script>
+
+<script type="text/javascript">
+;(function($)
+{
+$(function()
+{
+//すべてのリンクをポップアップ
+<!--$('a').simplePopup();-->
+
+// rel属性にpopup-htmlが設定されているリンクを、オーバーレイのデフォルト設定を上書きしてポップアップアップアップアップ
+             $('a[rel=popup-html]').simplePopup({overlayImage: null,overlayColor:'black'});
+           });
+        })(jQuery);
+</script>
+
+<!--css-->
+<link href="css/base.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/parts.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="hoge002"></div>
+<!--JavaScript-->
+<script src="js/particles.js"></script>
+<script src="js/setting.js"></script>
+
+<div id="hoge">
+
+<h1>大阪アップ！！（旅のしおり）</h1>
+<div class="journey">
+
+<div class="first mb50">
+<a href="popup/20151226.html" rel="popup-html"><p>１日目</p></a>
+</div>
+
+<div class="second mb50">
+<a href="popup/20151227.html" rel="popup-html"><p>２日目</p></a>
+</div>
+
+<div class="third">
+<a href="popup/20151228.html" rel="popup-html"><p>３日目</p></a>
+</div>
+
+</div>
+</div><!-- //hoge -->
+
+
+<div id="footerArea">
+<p>&copy; TRUNK☆LAB</p>
+</div>
+
+
+
+</body>
+</html>
