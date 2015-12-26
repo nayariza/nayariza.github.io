@@ -145,7 +145,81 @@ padding:40px 0 10px;
 /* iPhone 縦 */
 
 @media screen and (min-width:480px) { 
+
 	/*　for iPhone Landscape　(iPhone 横)　*/
+div#hoge{
+/*width:100%;
+height:530px;
+margin:30px auto 0;
+background-color:#000;
+position:relative;
+z-index:0;*/
+background: #000 none repeat scroll 0 0;
+min-height: 100%;
+transition: transform 0.5s ease 0s;
+z-index: 10;
+}
+div#hoge002{
+/*width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:block;
+z-index:0;*/
+background-color: #000;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+position: absolute;
+width: 100%;
+}
+div#hoge h1{
+color:#ffffff;
+font-size:2.5em;
+text-align:center;
+padding-top:50px;
+position:relative;
+z-index:99;
+}
+div#hoge div.journey{
+margin:0 auto;
+width:236px;
+padding-top:50px;
+position:relative;
+z-index:99;
+}
+div#hoge div.journey div.first,
+div#hoge div.journey div.second,
+div#hoge div.journey div.third{
+padding:15px;
+border:3px solid #fff;
+width:200px;
+border-radius: 20px;
+}
+div#hoge div.journey p{
+color:#ffffff;
+font-size:2.5em;
+text-align:center;
+}
+div#footerArea p{
+text-align:center;
+margin-top:140px;
+position:relative;
+z-index:99;
+color:#fff;
+}
+div#hoge a:link {
+text-decoration:none;
+}
+div#hoge div.journey div.first:hover,
+div#hoge div.journey div.second:hover,
+div#hoge div.journey div.third:hover{
+background-color:#4EE0E7;
+}
 /* 20151226.html */
 div#trip{
 background:#f2fdff;
@@ -207,6 +281,81 @@ padding:40px 0 10px;
 }
 @media screen and (max-width: 480px) {
 /* 480pxまでの幅の場合に適応される */
+div#hoge{
+/*width:100%;
+height:530px;
+margin:30px auto 0;
+background-color:#000;
+position:relative;
+z-index:0;*/
+background: #000 none repeat scroll 0 0;
+min-height: 100%;
+transition: transform 0.5s ease 0s;
+z-index: 10;
+}
+div#hoge002{
+/*width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display:block;
+z-index:0;*/
+background-color: #000;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+position: absolute;
+width: 100%;
+}
+div#hoge h1{
+color:#ffffff;
+font-size:2.5em;
+text-align:center;
+padding-top:50px;
+position:relative;
+z-index:99;
+}
+div#hoge div.journey{
+margin:0 auto;
+width:236px;
+padding-top:50px;
+position:relative;
+z-index:99;
+}
+div#hoge div.journey div.first,
+div#hoge div.journey div.second,
+div#hoge div.journey div.third{
+padding:15px;
+border:3px solid #fff;
+width:200px;
+border-radius: 20px;
+}
+div#hoge div.journey p{
+color:#ffffff;
+font-size:2.5em;
+text-align:center;
+}
+div#footerArea p{
+text-align:center;
+margin-top:140px;
+position:relative;
+z-index:99;
+color:#fff;
+}
+div#hoge a:link {
+text-decoration:none;
+}
+div#hoge div.journey div.first:hover,
+div#hoge div.journey div.second:hover,
+div#hoge div.journey div.third:hover{
+background-color:#4EE0E7;
+}
+
+
 div#trip{
 background:#f2fdff;
 height:100%;
