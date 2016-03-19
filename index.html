@@ -1,174 +1,107 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TRUNK☆LAB</title>
-<meta name="description" content="'ありがとう'が見える世の中に「Thanking.jp」♪'ありがとう'は'感謝・承認・応援'メッセージです。
-あなたがそれを伝えることで、あなたが応援したい人や商品が、対象組織の中でさらに評価され、励まされるかもしれません。">
-<meta name="keywords" content="trunklab,モノづくり,グラフィックデザイン,webデザイン">
-<meta name="author" content="trunklab">
-<meta name="copyright" content="&copy; trunklab" />
-<meta name="rating" content="general" />
-<meta name="coverage" content="japan" />
-<meta name="reply-to" content="trunk_lab@gmail.com" />
-
-<!-- jQuery  -->
+<title>NAYARIZA'S SPACE</title>
+<meta name="description" content="NAYARIZAのSPACEです。ただそれだけ。">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/slimbox2.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Miltonian+Tattoo' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-
-
-<!--
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
--->
-
-<!--JavaScript-->
-<!--スクロールをゆっくり動かすjs-->
-<script>
-$(function(){
-// #で始まるアンカーをクリックした場合に処理
-$('a[href^=#]').click(function() {
-// スクロールの速度
-var speed = 600; // ミリ秒
-// アンカーの値取得
-var href= $(this).attr("href");
-// 移動先を取得
-var target = $(href == "#" || href == "" ? 'html' : href);
-// 移動先を数値で取得
-var position = target.offset().top;
-// スムーススクロール
-$('body,html').animate({scrollTop:position}, speed, 'swing');
-return false;
-});
-});
-</script>
-<script>
-$(function() {
-    var topBtn = $('#page-top');    
-    topBtn.hide();
-    //スクロールが100に達したらボタン表示
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 250) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-</script>
-<script>
-$(function(){
-	$('a img').hover(
-		function(){$(this).fadeTo(200, 0.6);},
-		function(){$(this).fadeTo(200, 1.0);}
-	);
-});
-</script>
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.bxslider').bxSlider({
-                auto: true,
-                mode: 'fade',
-                slideWidth: 275,
-                pager: false
-            });
-        });
-</script>
-<script>
-new WOW().init();
-</script>
-
-<!--css-->
-<link href="css/base.css" rel="stylesheet">
-<link href="css/fonts.css" rel="stylesheet">
-<link href="css/parts.css" rel="stylesheet">
-<link href="css/reset.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/response_001.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet">
-
-<!--<link href="css/flexslider.css" rel="stylesheet">-->
-
-<!-- bxSlider Javascript file -->
-<script src="js/jquery.bxslider.min.js"></script>
-<!-- bxSlider CSS file -->
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
-
-<script src="js/wow.js"></script>
+<script src="js/my.js" type="text/javascript"></script>
+<script src="js/slimbox2.js"></script>
+<script src="http://maps.google.co.jp/maps/api/js?sensor=false"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
 </head>
 
 <body>
 <div id="wrap">
-<div class="section01">
+<nav id="navi">
 <ul class="clearfix">
-<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#index.html"><img src="images/nav_01.gif" width="66" height="16" alt="HOME"/></a></li>
-<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section02"><img src="images/nav_02.gif" width="69" height="16" alt="WORK"/></a></li>
-<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section03"><img src="images/nav_03.gif" width="59" height="16" alt="NEWS"/></a></li>
-<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section04"><img src="images/nav_04.gif" width="92" height="16" alt="MEMBER"/></a></li>
+<li><a href="#wrap">Home</a></li>
+<li><a href="#ct01">Profile</a></li>
+<li><a href="#sc02">Works</a></li>
+<li><a href="#ct03">Contact</a></li>
+<li><a href="http://nayariza.tumblr.com" target="_blank">Blog</a></li>
+<!--<li><a href="#wrap"><img src="images/btn01_off.png" onmouseover="this.src='images/btn01_on.png'" onmouseout="this.src='images/btn01_off.png'" width="100" height="50" alt="Home"></a></li>
+<li><a href="#ct01"><img src="images/btn02_off.png" onmouseover="this.src='images/btn02_on.png'" onmouseout="this.src='images/btn02_off.png'" width="157" height="50" alt="Introduction"></a></li>
+<li><a href="#ct02"><img src="images/btn03_off.png" onmouseover="this.src='images/btn03_on.png'" onmouseout="this.src='images/btn03_off.png'" width="130" height="50" alt="Memories"></a></li>
+<li><a href="#ct03"><img src="images/btn04_off.png" onmouseover="this.src='images/btn04_on.png'" onmouseout="this.src='images/btn04_off.png'" width="119" height="50" alt="Location"></a></li>-->
 </ul>
-
-<ul class="bxslider wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-<li><img src="images/img_txt_0001.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
-<li><img src="images/img_txt_0002.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
-<li><img src="images/img_txt_0003.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
-<li><img src="images/img_txt_0004.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
-</ul>
-
-</div><!--//section01-->
-
-<div class="section02" id="section02">
-<h2 class="mb30"><img src="images/h2_txt_01.gif" width="102" height="27" alt="WORK"/></h2>
-<div class="section02Inner clearfix">
-<div class="sideArea">
-<ul>
-<li class="art_img wow fadeInUp animated" data-wow-offset="10" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="https://www.facebook.com/trunklab"target="_blank"><img src="images/img_sns_01.gif" width="58" height="58" alt="Facebook"/></a></li>
-<li class="art_img wow fadeInUp animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_sns_02.gif" width="70" height="49" alt="Twitter"/></a></li>
-<li class="art_img wow fadeInUp animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="https://instagram.com/trunk_lab/" target="_blank"><img src="images/img_sns_03.gif" width="60" height="60" alt="Instagram"/></a></li>
-</ul>
-</div><!--//sideArea-->
-<div class="workArea">
-<ul class="clearfix">
-<li class="work001 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_001.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work002 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_002.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work003 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_003.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work004 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_004.jpg" width="300" height="300" alt=""/></a></li>
-<li class="work005 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_005.jpg" width="300" height="300" alt=""/></a></li>
-<li class="more art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_more.gif" width="300" height="300" alt="MORE..."/></a></li>
-</ul>
-</div><!--//workArea-->
-</div><!--//section02Inner-->
-</div><!--//section02-->
-
-<div class="section03" id="section03">
-<h2><img src="images/h2_txt_02.gif" width="102" height="30" alt="NEWS"/></h2>
-
-<ul>
-<li class="art_img wow slideInRight animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInRight;"><a href="#"><img src="images/img_news_001.jpg" width="600" height="160" alt=""/></a></li>
-<li class="art_img wow slideInLeft animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInLeft;"><a href="#"><img src="images/img_news_002.jpg" width="600" height="160" alt=""/></a></li>
-<li class="last art_img wow fadeInUp animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInUp;"><a href="#"><img src="images/img_news_003.jpg" width="600" height="160" alt=""/></a></li>
-</ul>
-</div><!--//section03-->
-
-<div class="section04" id="section04">
-<h2><img src="images/h2_txt_03.gif" width="138" height="27" alt="MEMBER"/></h2>
-<ul class="clearfix">
-<li class="mem001 art_img wow slideInLeft animated" data-wow-delay="2s" data-wow-offset="3000" style="visibility: visible; animation-delay: 7s; animation-name: fadeInLeft;"><a href="#"><img src="images/img_mem_001.jpg" width="309" height="368" alt="NAYARIZA"/></a></li>
-<li class="last mem002 art_img wow slideInRight animated" data-wow-delay="2s" data-wow-offset="3000" style="visibility: visible; animation-delay: 7s; animation-name: fadeInRight;"><a href="#"><img src="images/img_mem_002.jpg" width="309" height="368" alt="TAKA YOSHIDA"/></a></li>
-</ul>
-</div><!--//section04-->
-
-<div id="footerArea">
-<p>&copy; TRUNK☆LAB</p>
+</nav>
+<header>
+<h1>NAYARIZA'S SPACE</h1>
+<!--<h1 class="topLogo"><img src="images/title.png" width="377" height="470" alt="採銅所の桜 SAKURA in SAIDOSHO"></h1>-->
+</header>
+<div id="sc01">
+<p class="image"><img src="images/img_sc03.jpg" width="960" height="550" alt=""></p>
 </div>
-<p id="page-top"><a href="#wrap"><img src="images/page_top.png" width="126" height="100" alt="PAGE TOP"/></a></p>
+<article>
+<section id="ct01">
+<h2>Profile</h2>
+<dl>
+<dt>Name</dt>
+<dd>Riku Naya / 納屋 陸</dd>
+<dt>Nickname</dt>
+<dd>NAYA☆RIZA / ナヤ☆リザ</dd>
+<dt>Birth</dt>
+<dd>1988/08/30</dd>
+<dt>Hobby</dt>
+<dd>筋トレ / 読書</dd>
+<dt>Like</dt>
+<dd>お酒 / 駄菓子 / ドラえもん</dd>
+<dt>★★★</dt>
+<dd>☆☆☆</dd>
+<dt>★★★</dt>
+<dd>☆☆☆</dd>
+</dl>
+</section>
+<!--<div id="sc01">
+<p class="image"><img src="images/img_sc02.jpg" width="960" height="550" alt=""></p>
+<p id="ct01" class="text clearfix">満開の桜とその足元を包み込むように咲く菜の花の絨毯。毎年春になると山間の小さな駅を美しく彩ります。都会や観光地で華麗に咲き乱れる桜の風景とは違った、静かでどこか懐かしさを感じる春の風景がここにあります。この土地に駅が出来て百年余り。いつまでも残っていてほしい美しい日本の春です。</p>
+</div>-->
+
+<section id="sc02">
+<h2 id="ct02">Works</h2>
+<div class="picBlock clearfix">
+<a href="images/image01.jpg" rel="lightbox"><img src="images/img_work_01.jpg" width="220" height="165" alt="写真1"></a>
+<a href="images/image02.jpg" rel="lightbox"><img src="images/img_work_02.jpg" width="220" height="165" alt="写真2"></a>
+<a href="images/image03.jpg" rel="lightbox"><img src="images/img_work_02.jpg" width="220" height="165" alt="写真3"></a>
+</div>
+</section>
+
+<div id="pic02">
+<p class="image"><img src="images/img_sc01.jpg" width="960" height="550" alt=""></p>
+</div>
+
+<section id="sc03">
+<h2 id="ct03">Contact</h2>
+<dl>
+<dt>Mail</dt>
+<dd><a href="mailto:riku.deutsch@gmail.com">riku.deutsch@gmail.com</a></dd>
+<dt>Twitter</dt>
+<dd><a href="https://twitter.com/RickyImaiki" target="_blank">@RickyImaiki</a></dd>
+<dt>Facebook</dt>
+<dd><a href="https://www.facebook.com/riku.naya.1" target="_blank">Riku Naya</a></dd>
+<dt>Instagram</dt>
+<dd><a href="https://www.instagram.com/riku0078/" target="_blank">riku0078</a></dd>
+<dt>Github</dt>
+<dd><a href="https://github.com/nayariza" target="_blank">nayariza</a></dd>
+<!-- / .access --></dl>
+<!-- / .sc03 --></section>
+</article>
+
+<footer>
+<p>&copy; RIKU NAYA</p>
+</footer>
+<div id="page-top"><a href="#main">☆</a></div>
 </div>
 </body>
 </html>

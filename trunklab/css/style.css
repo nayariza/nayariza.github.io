@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* CSS Document */
+
+div#wrap{
+width:100%;
+}
+
+/*-----section01-----*/
+div#wrap div.section01 {
+padding-top:30px;
+position:relative;
+width:100%;
+height:650px;
+}
+div#wrap div.section01 ul{
+position:absolute;
+right:0;
+}
+div#wrap div.section01 ul li{
+float:left;
+margin-right:10px;
+}
+div#wrap div.section01 h1{
+text-align:center;
+/*margin-top:250px;*/
+}
+
+/*-----slider-----
+.slider .slide {
+  width: 275px;
+  height: 58px;
+  float: left;
+}
+.slider .slideSet {
+position:absolute;
+}
+.slider {
+  width: 275px;
+  height: 58px;
+  overflow: hidden;
+  position:relative;
+}
+*/
+
+/*-----section02-----*/
+div#wrap div.section02{
+width:100%;
+/*height:650px;*/
+margin:40px 0 40px;
+height:auto;
+}
+div#wrap div.section02 h2{
+text-align:center;
+}
+div#wrap div.section02 div.section02Inner{
+width:100%;
+height:auto;
+/*position:relative;*/
+}
+div#wrap div.section02 div.sideArea{
+width:10%;
+float:left;
+background:#e7ebe6;
+/*height:auto;*/
+min-height:600px;
+/*position:fixed;*/
+}
+div#wrap div.section02 div.sideArea ul{
+text-align:center;
+padding:20px 0 0;
+}
+div#wrap div.section02 div.sideArea ul li{
+margin-bottom:25px;
+}
+div#wrap div.section02 div.sideArea ul li.sns001{
+background:#db2425;
+}
+div#wrap div.section02 div.workArea{
+width:90%;
+float:left;
+height:auto;
+overflow:hidden;
+}
+div#wrap div.section02 div.workArea ul{
+width:100%;
+}
+div#wrap div.section02  div.workArea ul li{
+float:left;
+width:300px;
+height:300px;
+}
+
+/*-----section03-----*/
+div#wrap div.section03 h2{
+text-align:center;
+margin:0 0 40px;
+}
+div#wrap div.section03 ul{
+
+}
+div#wrap div.section03 ul li{
+text-align:center;
+margin-bottom:20px;
+/*width:auto;*/
+}
+div#wrap div.section03 ul li img{
+max-width:100%;
+height:auto;
+}
+
+/*-----section04-----*/
+div#wrap div.section04{
+width:100%;
+}
+div#wrap div.section04 h2{
+text-align:center;
+margin:40px 0;
+}
+div#wrap div.section04 ul{
+margin:60px auto 100px;
+width:50%;
+}
+div#wrap div.section04 ul li{
+float:left;
+margin-right:4%;
+}
+div#wrap div.section04 ul li img{
+max-width:100%;
+height:auto;
+}
+/*-----footerArea-----*/
+div#footerArea{
+padding:20px 0;
+background:#eee;
+}
+div#footerArea p{
+text-align:center;
+}
+
+
+/* ----- mouse hover切り替え -----  */
+div#wrap div.section02  div.workArea ul li a,
+div#wrap div.section04 ul li a{
+display: inline-block;
+}
+div#wrap div.section02  div.workArea ul li a:hover,
+div#wrap div.section04  ul li a:hover{
+background-color: transparent; /* IE6対応 */
+}
+div#wrap div.section02  div.workArea ul li a:hover img,
+div#wrap div.section04  ul li a:hover img{
+visibility: hidden;
+}
+/*-----section02（workArea）-----*/
+div#wrap div.section02  div.workArea ul li.work001{
+background:url(../images/img_work_001_o.jpg) no-repeat center;
+}
+div#wrap div.section02  div.workArea ul li.work002{
+background:url(../images/img_work_002_o.jpg) no-repeat center;
+}
+div#wrap div.section02  div.workArea ul li.work003{
+background:url(../images/img_work_003_o.jpg) no-repeat center;
+}
+div#wrap div.section02  div.workArea ul li.work004{
+background:url(../images/img_work_004_o.jpg) no-repeat center;
+}
+div#wrap div.section02  div.workArea ul li.work005{
+background:url(../images/img_work_005_o.jpg) no-repeat center;
+}
+div#wrap div.section02  div.workArea ul li.more{
+background:url(../images/img_work_more_o.gif) no-repeat center;
+}
+/*-----section04（memberArea）-----*/
+div#wrap div.section04 ul li.mem001{
+background:url(../images/img_mem_001_o.jpg) no-repeat center;
+}
+div#wrap div.section04 ul li.mem002{
+background:url(../images/img_mem_002_o.jpg) no-repeat center;
+}
+/* ----- スクロールしたら「トップへ戻るボタン」を表示（あとで設定） -----  */
+#page-top {
+position:fixed;
+bottom:55px;
+right:20px;
+font-size:77%;
+}
+#page-top a {
+background:#666;
+text-decoration:none;
+color:#fff;
+width:126px;
+/*padding:30px 0;*/
+text-align:center;
+display:block;
+border-radius:5px;
+}
+#page-top a:hover {
+text-decoration:none;
+background:#999;
+}
+
+/*-----new汎用クラス-----*/
+ul li.last{
+margin-top:0 !important;
+margin-right:0 !important;
+margin-bottom:0 !important;
+margin-left:0 !important;
+}

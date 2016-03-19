@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRUNK☆LAB</title>
+<meta name="description" content="'ありがとう'が見える世の中に「Thanking.jp」♪'ありがとう'は'感謝・承認・応援'メッセージです。
+あなたがそれを伝えることで、あなたが応援したい人や商品が、対象組織の中でさらに評価され、励まされるかもしれません。">
+<meta name="keywords" content="trunklab,モノづくり,グラフィックデザイン,webデザイン">
+<meta name="author" content="trunklab">
+<meta name="copyright" content="&copy; trunklab" />
+<meta name="rating" content="general" />
+<meta name="coverage" content="japan" />
+<meta name="reply-to" content="trunk_lab@gmail.com" />
+
+<!-- jQuery  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+
+<!--
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+-->
+
+<!--JavaScript-->
+<!--スクロールをゆっくり動かすjs-->
+<script>
+$(function(){
+// #で始まるアンカーをクリックした場合に処理
+$('a[href^=#]').click(function() {
+// スクロールの速度
+var speed = 600; // ミリ秒
+// アンカーの値取得
+var href= $(this).attr("href");
+// 移動先を取得
+var target = $(href == "#" || href == "" ? 'html' : href);
+// 移動先を数値で取得
+var position = target.offset().top;
+// スムーススクロール
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+<script>
+$(function() {
+    var topBtn = $('#page-top');    
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+<script>
+$(function(){
+	$('a img').hover(
+		function(){$(this).fadeTo(200, 0.6);},
+		function(){$(this).fadeTo(200, 1.0);}
+	);
+});
+</script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                mode: 'fade',
+                slideWidth: 275,
+                pager: false
+            });
+        });
+</script>
+<script>
+new WOW().init();
+</script>
+
+<!--css-->
+<link href="css/base.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href="css/parts.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/response_001.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+
+<!--<link href="css/flexslider.css" rel="stylesheet">-->
+
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+<script src="js/wow.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+<div class="section01">
+<ul class="clearfix">
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#index.html"><img src="images/nav_01.gif" width="66" height="16" alt="HOME"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section02"><img src="images/nav_02.gif" width="69" height="16" alt="WORK"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section03"><img src="images/nav_03.gif" width="59" height="16" alt="NEWS"/></a></li>
+<li class="wow rotateIn animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: rotateIn;"><a href="#section04"><img src="images/nav_04.gif" width="92" height="16" alt="MEMBER"/></a></li>
+</ul>
+
+<ul class="bxslider wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+<li><img src="images/img_txt_0001.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
+<li><img src="images/img_txt_0002.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
+<li><img src="images/img_txt_0003.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
+<li><img src="images/img_txt_0004.gif" width="279" height="62" alt="TRUNK☆LAB"/></li>
+</ul>
+
+</div><!--//section01-->
+
+<div class="section02" id="section02">
+<h2 class="mb30"><img src="images/h2_txt_01.gif" width="102" height="27" alt="WORK"/></h2>
+<div class="section02Inner clearfix">
+<div class="sideArea">
+<ul>
+<li class="art_img wow fadeInUp animated" data-wow-offset="10" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="https://www.facebook.com/trunklab"target="_blank"><img src="images/img_sns_01.gif" width="58" height="58" alt="Facebook"/></a></li>
+<li class="art_img wow fadeInUp animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_sns_02.gif" width="70" height="49" alt="Twitter"/></a></li>
+<li class="art_img wow fadeInUp animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="https://instagram.com/trunk_lab/" target="_blank"><img src="images/img_sns_03.gif" width="60" height="60" alt="Instagram"/></a></li>
+</ul>
+</div><!--//sideArea-->
+<div class="workArea">
+<ul class="clearfix">
+<li class="work001 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_001.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work002 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_002.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work003 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_003.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work004 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_004.jpg" width="300" height="300" alt=""/></a></li>
+<li class="work005 art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInRight;"><a href="#"><img src="images/img_work_005.jpg" width="300" height="300" alt=""/></a></li>
+<li class="more art_img wow slideInRight animated" data-wow-delay="2s" style="visibility: visible; animation-delay: 3s; animation-name: fadeInUp;"><a href="#"><img src="images/img_work_more.gif" width="300" height="300" alt="MORE..."/></a></li>
+</ul>
+</div><!--//workArea-->
+</div><!--//section02Inner-->
+</div><!--//section02-->
+
+<div class="section03" id="section03">
+<h2><img src="images/h2_txt_02.gif" width="102" height="30" alt="NEWS"/></h2>
+
+<ul>
+<li class="art_img wow slideInRight animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInRight;"><a href="#"><img src="images/img_news_001.jpg" width="600" height="160" alt=""/></a></li>
+<li class="art_img wow slideInLeft animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInLeft;"><a href="#"><img src="images/img_news_002.jpg" width="600" height="160" alt=""/></a></li>
+<li class="last art_img wow fadeInUp animated" data-wow-delay="2s" data-wow-offset="1000" style="visibility: visible; animation-delay: 5s; animation-name: fadeInUp;"><a href="#"><img src="images/img_news_003.jpg" width="600" height="160" alt=""/></a></li>
+</ul>
+</div><!--//section03-->
+
+<div class="section04" id="section04">
+<h2><img src="images/h2_txt_03.gif" width="138" height="27" alt="MEMBER"/></h2>
+<ul class="clearfix">
+<li class="mem001 art_img wow slideInLeft animated" data-wow-delay="2s" data-wow-offset="3000" style="visibility: visible; animation-delay: 7s; animation-name: fadeInLeft;"><a href="#"><img src="images/img_mem_001.jpg" width="309" height="368" alt="NAYARIZA"/></a></li>
+<li class="last mem002 art_img wow slideInRight animated" data-wow-delay="2s" data-wow-offset="3000" style="visibility: visible; animation-delay: 7s; animation-name: fadeInRight;"><a href="#"><img src="images/img_mem_002.jpg" width="309" height="368" alt="TAKA YOSHIDA"/></a></li>
+</ul>
+</div><!--//section04-->
+
+<div id="footerArea">
+<p>&copy; TRUNK☆LAB</p>
+</div>
+<p id="page-top"><a href="#wrap"><img src="images/page_top.png" width="126" height="100" alt="PAGE TOP"/></a></p>
+</div>
+</body>
+</html>

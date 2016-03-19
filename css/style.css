@@ -1,208 +1,167 @@
-@charset "UTF-8";
-/* CSS Document */
-
-div#wrap{
-width:100%;
+@charset "utf-8";
+html{
+background:#000;
 }
-
-/*-----section01-----*/
-div#wrap div.section01 {
-padding-top:30px;
-position:relative;
-width:100%;
-height:650px;
+body {
+background: url(../images/wall.jpg) fixed;
+background-size: 100% auto;
 }
-div#wrap div.section01 ul{
-position:absolute;
-right:0;
+p,dt,dd{
+font-family: 'Noto Sans Japanese', sans-serif;
+font-weight:500;
 }
-div#wrap div.section01 ul li{
-float:left;
-margin-right:10px;
+#wrap {
+margin:0px auto;
+width:960px;
+/*background: rgba(201,0,85,0.9) url(../images/sakuraImg.png) no-repeat right bottom;*/
+padding:0px 0px 15px;
+box-shadow:0px 0px 20px #fff;
+background:rgba(51,174,168,0.9);
 }
-div#wrap div.section01 h1{
-text-align:center;
-/*margin-top:250px;*/
-}
-
-/*-----slider-----
-.slider .slide {
-  width: 275px;
-  height: 58px;
-  float: left;
-}
-.slider .slideSet {
-position:absolute;
-}
-.slider {
-  width: 275px;
-  height: 58px;
-  overflow: hidden;
-  position:relative;
-}
-*/
-
-/*-----section02-----*/
-div#wrap div.section02{
-width:100%;
-/*height:650px;*/
-margin:40px 0 40px;
-height:auto;
-}
-div#wrap div.section02 h2{
-text-align:center;
-}
-div#wrap div.section02 div.section02Inner{
-width:100%;
-height:auto;
-/*position:relative;*/
-}
-div#wrap div.section02 div.sideArea{
-width:10%;
-float:left;
-background:#e7ebe6;
-/*height:auto;*/
-min-height:600px;
+#wrap nav{
+width:960px;
 /*position:fixed;*/
+height:40px;
+/*z-index:1;*/
+background:rgba(0,0,0,0.9);
+padding:20px 0;
 }
-div#wrap div.section02 div.sideArea ul{
+#wrap nav ul{
+/*padding: 0px 0px 0px 321px;*/
+width:50%;
+margin:0 auto;
+}
+#wrap nav ul li{
+float: left;
+list-style: none;
+color:#33aea8;
+padding:5px 15px;
+font-family: 'Miltonian Tattoo', cursive;
+font-size:1.2rem;
+}
+#wrap nav ul li a{
+color:#33aea8;
+text-decoration:none;
+}
+#wrap nav ul li a:hover{
+color:#fff;
+text-decoration:underline;
+}
+#wrap nav ul li a:visited{
+/*color:#33aea8;*/
+text-decoration:none;
+}
+/*#wrap #navi .clearfix li a img {
+	display: block;
+}*/
+#wrap header{
+padding: 142px 0px 50px;
+}
+#wrap header h1{
+padding: 0px 292px 142px;
 text-align:center;
-padding:20px 0 0;
+font-size:6rem;
+font-family: 'Londrina Sketch', cursive;
 }
-div#wrap div.section02 div.sideArea ul li{
-margin-bottom:25px;
+/*#wrap article #sc01 .text {
+padding: 140px 291px 140px 302px;
+font-size: 108%;
+letter-spacing: 5px;
+line-height: normal;
 }
-div#wrap div.section02 div.sideArea ul li.sns001{
-background:#db2425;
-}
-div#wrap div.section02 div.workArea{
-width:90%;
+#wrap article #sc01 .text:first-letter {
 float:left;
-height:auto;
-overflow:hidden;
+line-height:1;
+font-size:600%;
+padding-right:5px;
+}*/
+#wrap article #ct01{
+padding:25px 0px 80px;
 }
-div#wrap div.section02 div.workArea ul{
-width:100%;
-}
-div#wrap div.section02  div.workArea ul li{
-float:left;
-width:300px;
-height:300px;
-}
-
-/*-----section03-----*/
-div#wrap div.section03 h2{
+#wrap article h2{
 text-align:center;
-margin:0 0 40px;
+font-size:2rem;
+font-family:'Miltonian Tattoo', cursive;
 }
-div#wrap div.section03 ul{
-
-}
-div#wrap div.section03 ul li{
-text-align:center;
-margin-bottom:20px;
-/*width:auto;*/
-}
-div#wrap div.section03 ul li img{
-max-width:100%;
-height:auto;
-}
-
-/*-----section04-----*/
-div#wrap div.section04{
-width:100%;
-}
-div#wrap div.section04 h2{
-text-align:center;
-margin:40px 0;
-}
-div#wrap div.section04 ul{
-margin:60px auto 100px;
+#wrap article #ct01 dl,
+#wrap article #sc03 dl{
+margin:0 auto;
+padding:5% 0;
 width:50%;
 }
-div#wrap div.section04 ul li{
-float:left;
-margin-right:4%;
+#wrap article #ct01 dl dt,
+#wrap article #sc03 dl dt{
+padding:1% 0;
+font-weight:bold;
 }
-div#wrap div.section04 ul li img{
-max-width:100%;
-height:auto;
+#wrap article #ct01 dl dd,
+#wrap article #sc03 dl dd{
+margin-left:5%;
 }
-/*-----footerArea-----*/
-div#footerArea{
-padding:20px 0;
-background:#eee;
+#wrap article #sc02 {
+padding:25px 0px 80px;
 }
-div#footerArea p{
+#wrap article #sc02 .picBlock{
+padding: 5% 0px 0px 107px;
+}
+#wrap article #sc02 .picBlock a {
+	display: block;
+	width:220px;
+	height:165px;
+	float:left;
+	margin: 0px 0px 46px 46px;	
+}
+#wrap article #sc02 .picBlock a:first-child {
+	margin: 0px 0px 46px 0px;	
+}
+#wrap article #sc02 .picBlock a:hover {
+	box-shadow:5px 5px 5px #222;
+}
+#wrap article #pic02{
+padding:350px 0px 30px;
+}
+#wrap article #sc03{
+padding:30px 0px 80px;
+}
+/*#wrap article #sc03 #map_canvas {
+height: 400px;
+width: 960px;
+}
+#wrap article #sc03 .access {
+padding: 56px 0px 27px 317px;
+}
+#wrap article #sc03 .access dt {
+float: left;
+width: 73px;
+}*/
+dt,dd{
+	font-size: 108%;
+	line-height: 1.5;
+}
+#wrap footer{
+padding:20px 0px 0px;
+}
+#wrap footer p{
 text-align:center;
+font-family: 'Miltonian Tattoo', cursive;
 }
-
-
-/* ----- mouse hover切り替え -----  */
-div#wrap div.section02  div.workArea ul li a,
-div#wrap div.section04 ul li a{
-display: inline-block;
-}
-div#wrap div.section02  div.workArea ul li a:hover,
-div#wrap div.section04  ul li a:hover{
-background-color: transparent; /* IE6対応 */
-}
-div#wrap div.section02  div.workArea ul li a:hover img,
-div#wrap div.section04  ul li a:hover img{
-visibility: hidden;
-}
-/*-----section02（workArea）-----*/
-div#wrap div.section02  div.workArea ul li.work001{
-background:url(../images/img_work_001_o.jpg) no-repeat center;
-}
-div#wrap div.section02  div.workArea ul li.work002{
-background:url(../images/img_work_002_o.jpg) no-repeat center;
-}
-div#wrap div.section02  div.workArea ul li.work003{
-background:url(../images/img_work_003_o.jpg) no-repeat center;
-}
-div#wrap div.section02  div.workArea ul li.work004{
-background:url(../images/img_work_004_o.jpg) no-repeat center;
-}
-div#wrap div.section02  div.workArea ul li.work005{
-background:url(../images/img_work_005_o.jpg) no-repeat center;
-}
-div#wrap div.section02  div.workArea ul li.more{
-background:url(../images/img_work_more_o.gif) no-repeat center;
-}
-/*-----section04（memberArea）-----*/
-div#wrap div.section04 ul li.mem001{
-background:url(../images/img_mem_001_o.jpg) no-repeat center;
-}
-div#wrap div.section04 ul li.mem002{
-background:url(../images/img_mem_002_o.jpg) no-repeat center;
-}
-/* ----- スクロールしたら「トップへ戻るボタン」を表示（あとで設定） -----  */
 #page-top {
 position:fixed;
-bottom:55px;
+bottom:20px;
 right:20px;
-font-size:77%;
+font-size:170%;
 }
 #page-top a {
-background:#666;
+background:#33aea8;
 text-decoration:none;
 color:#fff;
-width:126px;
-/*padding:30px 0;*/
+width:85px;
+padding:20px 0;
 text-align:center;
 display:block;
 border-radius:5px;
 }
-#page-top a:hover {
+#page-top a:hover{
 text-decoration:none;
-background:#999;
-}
-
-/*-----new汎用クラス-----*/
-ul li.last{
-margin-top:0 !important;
-margin-right:0 !important;
-margin-bottom:0 !important;
-margin-left:0 !important;
+background:#8ed6d1;
 }
