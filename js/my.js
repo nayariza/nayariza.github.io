@@ -1,3 +1,12 @@
+
+(function($){
+	$(function() {	
+			$('#navi .switch').on('click', function() {
+				$(this).next().slideToggle(300);
+				$(this).toggleClass('active');
+			});
+	});
+})(jQuery);
 //起動時ページフェードイン
 $(function(){
 	$('#container:not(body #wrap)').css({display:'block',marginLeft:$(window).width(),opacity:'0'});
@@ -36,10 +45,6 @@ $('body,html').animate({scrollTop:position}, speed, 'swing');
 return false;
 });
 });
-//slimbox2
-$(document).ready(function() {
-$('a[rel*=lightbox]').slimbox();
-	});
 //地図
 $(function(){
 google.maps.event.addDomListener(window, 'load', function () {
