@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<!--
+私のスピードに
+　-= ∧＿∧
+-=と(´･ω･`)　ｼｭﾀｯ
+　-=/　と_ノ
+-=_/／⌒ｿ
+
+ついてこれるかな？
+∧＿∧ =-
+(´･ω･`)`つ=-　ｻﾞｻﾞｯ
+　`つ \ =-
+　\,⌒＼\,,,_=-
+-->
+
+<!-- meta -->
+<meta charset="UTF-8">
+<title>お客様評価収集コースター「スマイル」</title>
+<meta name="description" content="お客様評価収集コースター「スマイル」。コースターを通して、お客様のお店への満足度を手間なく集計、分析することにより、店のスタッフのモチベーションの向上、既存のお客様への本質的なサービスを目指すことができるようになるツールです。">
+<meta name="keywords" content="tお客様評価収集コースター「スマイル」、スマイル、コースター、Arigacho,Inc">
+<meta name="author" content="Arigachi,Inc">
+<meta name="copyright" content="© Arigachi,Inc" />
+<meta name="rating" content="general" />
+<meta name="coverage" content="japan" />
+
+<!-- jQuery  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+<script>
+$(function(){
+// #で始まるアンカーをクリックした場合に処理
+$('a[href^=#]').click(function() {
+// スクロールの速度
+var speed = 600; // ミリ秒
+// アンカーの値取得
+var href= $(this).attr("href");
+// 移動先を取得
+var target = $(href == "#" || href == "" ? 'html' : href);
+// 移動先を数値で取得
+var position = target.offset().top;
+// スムーススクロール
+$('body,html').animate({scrollTop:position}, speed, 'swing');
+return false;
+});
+});
+</script>
+<script>
+$(function() {
+    var topBtn = $('#page-top');    
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+
+<!-- css  -->
+<link href="../css/base.css" media='all' rel='stylesheet' type='text/css'>
+<link href="../css/fonts.css" media='all' rel='stylesheet' type='text/css'>
+<link href="../css/reset.css" media='all' rel='stylesheet' type='text/css'>
+<link href="../css/parts.css" media='all' rel='stylesheet' type='text/css'>
+<link href="css/style.css" media='all' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div id="wrap">
+
+<div class="contents01">
+<div class="header_top">
+<p><a href="#index.html"><img src="images/logo.gif" width="191" height="27" alt="SMILE？"/></a></p>
+<div class="gnav">
+<ul class="clearfix">
+  <li><a href="#index.html"><img src="images/nav_01.gif" width="58" height="19" alt="Home"/></a></li>
+<li><a href="#section02"><img src="images/nav_02.gif" width="97" height="21" alt="Smileとは？"/></a></li>
+<li><a href="#section03"><img src="images/nav_03.gif" width="136" height="20" alt="How To Use"/></a></li>
+<li><a href="#section04"><img src="images/nav_04.gif" width="60" height="21" alt="Price"/></a></li>
+</ul>
+</div><!--//gnav-->
+</div><!--//header_top-->
+<div class="main_visual">
+<!--<h1><img src="images/h_main.jpg" width="1000" height="613" alt=""/></h1>-->
+<p class="text01"><img src="images/block01_txt_01.png" width="765" height="42" alt="お客様の声がスタッフをやる気にさせる。お店を変える。"/></p>
+<h1 class="text02"><img src="images/block01_txt_02.png" width="543" height="42" alt="お客様評価収集コースター「スマイル」"/></h1>
+<p class="btn01"><a href="http://arigacho.theshop.jp/items/1830309" target="_blank"><img src="images/more_01.gif" width="409" height="67" alt="まずはお試し版を申し込む"/></a></p>
+</div>
+</div><!--//contents01-->
+
+
+<div class="contents02" id="section02">
+<h2 class="mb50"><img src="images/h_block02.gif" width="312" height="26" alt="What Is Smile?"/></h2>
+<div class="block01">
+<p class="text01 mb50"><img src="images/block02_txt_01.gif" width="617" height="40" alt="これからも広告で新規客を集め続けますか？"/></p>
+<p class="text02"><img src="images/block02_txt_02.gif" width="684" height="40" alt="既存のお客様へのサービスを見直してみませんか？"/></p>
+</div><!--//block01-->
+<div class="block02 clearfix">
+<p class="floatL img01"><img src="images/block02_img_01.jpg" width="315" height="315" alt="Smileコースター"/></p>
+<div class="block02Inner floatL">
+<p class="mb50 text03"><img src="images/block02_txt_03.gif" width="684" height="40" alt="お客様評価収集コースター「スマイル」とは"/></p>
+<p class="text04"><img src="images/block02_txt_04.gif" width="450" height="185" alt="お客様がコースターを折り曲げることで、お店への満足度を手間なく収集し、集計、分析することにより、店のスタッフのモチベーションを高め、チームワークを強化し、既存のお客様への本質的なサービスを目指すことができるようになるツールです。"/></p> 
+</div><!--//block02Inner-->
+</div><!--//block02-->
+</div><!--//contents02-->
+
+
+<div class="contents03" id="section03">
+<h2 class="mb50"><img src="images/h_block03.gif" width="247" height="25" alt="How To Use"/></h2>
+<div class="block01 clearfix mb50">
+<p class="img01"><img src="images/block03_txt_01.gif" width="296" height="163" alt="お客様評価収集コースター「スマイル」をお客様のテーブルに設置します。"/></p>
+<p class="img02"><img src="images/block03_txt_02.gif" width="405" height="236" alt="お客様はお店への満足度をコースターを折り曲げることで表します。ペンで一言コメントを書いていただくこともあります。Excellent（素晴らしい！）Very Good（とても良い） Good（良い） Huum...（う〜ん・・・）"/></p>
+</div><!--//block01-->
+<div class="block02 clearfix mb50">
+<p class="img03"><img src="images/block03_txt_03.gif" width="407" height="217" alt="コースターを収集し、スマイル事務局にそのまま送ります。※店毎はもちろん、テーブル毎、シフト毎に評価を分けて収集して送ることにより、レポートで比較することができます。"/></p>
+<p class="img04"><img src="images/block03_txt_04.gif" width="382" height="224" alt="スマイル事務局でコースターを集計、レポートにしてお店にお届けします。（メールor郵送）※レポートでは月毎のお客様満足度の変化、他店との比較順位（偏差値）、お客様の声をデータ化します。"/></p>
+</div><!--//block02-->
+<div class="block03">
+<p class="img05"><img src="images/block03_txt_05.gif" width="722" height="135" alt="レポートをより良いお店づくりに活用しましょう。スタッフ皆でシェアして盛り上がったり、アイディアを出し合いましょう。スタッフへの評価やねぎらい、励ましをしてモチベーションを高めましょう。スタッフ皆がオーナーシップを持って、既存のお客様に喜んでいただける本質的なサービスを目指しましょう。"/></p>
+</div><!--//block03-->
+<!--<div class="center mt50">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B6zVzWU95Sw" frameborder="0" allowfullscreen></iframe>
+</div>-->
+</div><!--//contents03-->
+
+
+<div class="contents04" id="section04">
+<h2 class="mb50"><img src="images/h_block04.gif" width="109" height="27" alt="Price"/></h2>
+
+<table width="700" border="10">
+<tbody>
+<tr>
+<th scope="col">枚数</th>
+<th scope="col">料金（月額※レポート付き）</th>
+</tr>
+<tr>
+<td>50枚</td>
+<td>1.980円</td>
+</tr>
+<tr>
+<td>月100枚</td>
+<td>4.980円</td>
+</tr>
+<tr>
+<td>月300枚</td>
+<td>9.800円</td>
+</tr>
+<!--<tr>
+<td>月1000枚</td>
+<td>19.800円</td>
+</tr>-->
+</tbody>
+</table>
+<p class="btn02 center"><a href="http://arigacho.theshop.jp/items/1830309" target="_blank"><img src="images/more_01.gif" width="409" height="67" alt="まずはお試し版を申し込む"/></a></p>
+</div><!--//contents04-->
+
+<div class="footerBlock">
+<p class="center">Copyright &copy; SMILE？ All Rights Reserved.</p>
+</div><!--//footerBlock-->
+<p id="page-top"><a href="#wrap"><img src="images/page_top.png" width="126" height="100" alt="PAGE TOP"/></a></p>
+</div>
+<!-- PayPal Logo -->
+<!--<table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="#" onclick="javascript:window.open('https://www.paypal.jp/jp/contents/popup/logo/AM_235_65/','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=900, height=700');"><img src="https://www.paypal.jp/uploadedImages/wwwpaypaljp/Supporting_Content/jp/contents/popup/logo/AM_235_65.png" border="0" alt="その他のオプション"></a></td></tr></table>-->
+<!-- PayPal Logo -->
+<!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="frm1">
+<input type="hidden" name="charset" value="UTF-8" />
+<input type="hidden" name="cmd" value="_ext-enter" />
+<input type="hidden" name="redirect_cmd" value="_xclick" />
+<input type="hidden" name="business" value="[売り手のPayPalに登録されたメールアドレス]" />
+<input type="hidden" name="item_name" value="Deposit in account" />
+<input type="hidden" name="item_number" value="101" />
+<input type="hidden" name="amount" value="[金額]" />
+<input type="hidden" name="invoice"  id="invoice" value="[ユニークID]" />
+<input type="hidden" name="shipping" value="0" />
+<input type="hidden" name="no_shipping" value="2" />
+<input type="hidden" name="currency_code" value="JPY" />
+<input type="hidden" name="lc" value="en" />
+<input name="cancel_return" type="hidden" id="cancel_return" value="[cancel時に戻るページのパス]" />
+<input name="return" type="hidden" id="return" value="[返ってくるページのURL]" />
+<input name="notify_url" type="hidden" id="notify_url" value="[後処理ページのパス]" />
+
+<input type="hidden" name="first_name" value="firstname" />
+<input type="hidden" name="last_name" value="lastname" />
+<input type="hidden" name="zip" value="xxx-xxxx" />
+<input type="hidden" name="city" value="" />
+<input type="hidden" name="address1" value="" />
+<input type="hidden" name="H_PhoneNumber" value="" />
+<input type="hidden" name="email" value="info@example.jp" />
+</form>
+-->
+</body>
+</html>
