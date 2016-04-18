@@ -130,6 +130,9 @@ display:inline-block;
 width:220px;
 margin:0 1% 35px;
 }
+#wrap article #sc02 .picBlock .contents02{
+display:none;
+}
 #wrap article #sc02 .picBlock .contents_img:hover {
 box-shadow:5px 5px 5px #222;
 }
