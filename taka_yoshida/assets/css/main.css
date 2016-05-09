@@ -251,7 +251,9 @@ margin-left:16.66667%;
 .\-1u{
 margin-left:8.33333%;
 }
-
+span.contact{
+font-size:0.7em;
+}
 /*--- ここまで行詰めしている（大体） ---*/
 
 @media screen and (min-width: 737px) {
