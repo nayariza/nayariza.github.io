@@ -136,7 +136,7 @@ background-color:#fff;
 }
 #footer ul.navbar-nav{
 margin:10px auto 30px;
-width:400px;
+width:420px;
 text-align:center;
 float:none;
 }
@@ -186,4 +186,32 @@ border-radius:5px;
 #page-top a:hover{
 text-decoration:none;
 background:#8ed6d1;
+}
+/* for slidebars.js */
+.slidebars-menu-base{
+padding:8px;
+color:#fff;
+padding:20px;
+}
+.slidebars-menu-base ul{
+padding-left:10px;
+}
+.slidebars-menu-base ul li{
+list-style:none;
+}
+.slidebars-menu-base a:link{
+color:#888;
+}
+.slidebars-menu-base a:visited{
+color:#888;
+}
+.slidebars-menu-base a:hover{
+color:#fff;
+text-decoration:none;
+}
+.slidebars-menu-base h6 {
+color:#fff;
+font-size:1.2em;
+font-weight:400;
+border-bottom:1px solid rgba(255,255,255,0.60);
 }
