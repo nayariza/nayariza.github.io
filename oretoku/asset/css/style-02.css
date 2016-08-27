@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--- header ---*/
+
+/*--- #sec01 ---*/
+#sec01{
+text-align:center;
+padding-top:1em;
+}
+#sec01 p.nayacchi{
+position:relative;
+padding:.5em;
+background-color:#f6f6f6;
+font-size:3rem;
+font-weight:800;
+margin-bottom:0;
+/*transition:all 0.4s ease 0s;*/
+}
+#sec01 p.nayacchi::after{
+position:absolute;
+top:0;
+right:0;
+content:'';
+width:0;
+border-width:0 16px 16px 0;
+border-style:solid;
+border-color:#fff #fff #ddd #ddd;
+box-shadow:-1px 1px 2px rgba(0, 0, 0, .1);
+}
+#sec01 a{
+display:block;
+transition:all 0.4s ease 0s;
+}
+#sec01 a:hover{
+color:#9D9AE0;
+text-decoration:none;
+}
+/*#sec01 p.nayacchi:hover{
+background:#CDFBFA;
+}*/
+.box{
+padding:20px;
+text-align:left;
+background-color:#fff;
+font-size:2rem;
+margin-bottom:10px;
+border:2px solid #f6f6f6;
+border-top:none;
+}
+.box p{
+}
+.mt05{margin-top:5px !important;}
+/*--- #sec02 ---*/
+
+/*--- #sec03 ---*/
+
+/*--- section.special ---*/
